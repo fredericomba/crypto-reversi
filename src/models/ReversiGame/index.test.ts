@@ -12,6 +12,28 @@ describe('ReversiGame(firstPlayer, gameData)', () => {
 
   });
 
+  describe('PANELS_COUNT', () => {
+
+    expect(ReversiGame.PANELS_COUNT).not.toBeUndefined();
+    expect(typeof ReversiGame.PANELS_COUNT).toEqual('number');
+    expect(ReversiGame.PANELS_COUNT).toEqual(64);
+
+  });
+
+  describe('INSIDE_BOARD', () => {
+
+    expect(ReversiGame.INSIDE_BOARD).not.toBeUndefined();
+    expect(typeof ReversiGame.INSIDE_BOARD).toEqual('function');
+
+  });
+
+  describe('INDEX_FROM_COORDINATES', () => {
+
+    expect(ReversiGame.INDEX_FROM_COORDINATES).not.toBeUndefined();
+    expect(typeof ReversiGame.INDEX_FROM_COORDINATES).toEqual('function');
+
+  });
+
   describe('Piece', () => {
 
     expect(ReversiGame.Piece).not.toBeUndefined();

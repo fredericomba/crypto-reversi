@@ -27,6 +27,8 @@ const WHITE_FIRST_B = 36; // coordinates (4, 4)
 
 const BOARD_LIMIT = 8;
 
+const PANELS_COUNT = BOARD_LIMIT * BOARD_LIMIT | 0;
+
 const INSIDE_BOARD = (x: number, y: number) => {
 
   const withinX = 0 <= x && x < BOARD_LIMIT;
@@ -124,6 +126,9 @@ const DIRECTIONS = Object.freeze([
 class ReversiGame {
 
   static BOARD_LIMIT = BOARD_LIMIT;
+  static PANELS_COUNT = PANELS_COUNT;
+  static INSIDE_BOARD = INSIDE_BOARD;
+  static INDEX_FROM_COORDINATES = INDEX_FROM_COORDINATES;
 
   static Piece = Piece;
   static GameData = GameData;
