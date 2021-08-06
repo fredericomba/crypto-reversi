@@ -1,0 +1,59 @@
+.GameBoard {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+
+  grid-gap: 12px;
+  padding: 12px;
+}
+
+.GameBoard-buttons {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  background: black;
+
+  grid-gap: 6px;
+  padding: 6px;
+
+  width: 500px;
+  height: 500px;
+}
+
+.GameButton {
+  position: relative; /* creates new stacking context */
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.GameButton > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  
+  transition: opacity 1.5s ease;
+}
+
+.GameButton[data-piece="none"] > .GameButton-piece-black,
+.GameButton[data-piece="none"] > .GameButton-piece-white {
+  opacity: 0;
+}
+
+.GameButton[data-piece="black"] > .GameButton-piece-white {
+  opacity: 0;
+}
+
+.GameButton[data-piece="white"] > .GameButton-piece-black {
+  opacity: 0;
+}
+
+.GameButton-piece-black, .GameButton-piece-white {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90%;
+  height: 90%;
+}
