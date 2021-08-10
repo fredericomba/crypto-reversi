@@ -12,7 +12,7 @@ PIECE_NAMES.set(ReversiGame.Piece.NONE, "none");
 PIECE_NAMES.set(ReversiGame.Piece.BLACK, "black");
 PIECE_NAMES.set(ReversiGame.Piece.WHITE, "white");
 
-interface PropsGameBoard {
+export interface PropsGameBoard {
   color: string;
   board: ReversiGame;
   moves: number;

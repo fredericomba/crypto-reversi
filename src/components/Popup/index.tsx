@@ -3,7 +3,7 @@ import React, { ReactElement } from 'react';
 import './index.css';
 import closeIcon from './close-button.svg';
 
-interface PropsPopup {
+export interface PropsPopup {
   visible: boolean;
   title: string;
   content: ReactElement | null;

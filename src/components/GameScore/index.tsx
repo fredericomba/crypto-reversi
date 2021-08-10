@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-interface PropsGameScore {
+export interface PropsGameScore {
   color: string;
   iconBlack: string;
   iconWhite: string;

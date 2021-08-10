@@ -9,7 +9,7 @@ PIECE_NAMES.set(ReversiGame.Piece.NONE, "none");
 PIECE_NAMES.set(ReversiGame.Piece.BLACK, "black");
 PIECE_NAMES.set(ReversiGame.Piece.WHITE, "white");
 
-interface PropsGameButton {
+export interface PropsGameButton {
   iconBlack: string;
   iconWhite: string;
   color: string;
