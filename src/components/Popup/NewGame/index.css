@@ -1,0 +1,31 @@
+.PopupNewGame-row-title {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.PopupNewGame-row-option {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.PopupNewGame-row-option > * {
+  margin: 8px;
+}
+
+.PopupNewGame-button {
+  border: 1px solid black;
+  border-radius: 8px;
+  background: #1E1E1E;
+  color: white;
+  padding: 8px;
+}
