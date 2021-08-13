@@ -4,6 +4,8 @@ import './index.css';
 
 export interface PropsGameScore {
   color: string;
+  nameBlack: string;
+  nameWhite: string;
   iconBlack: string;
   iconWhite: string;
   countBlack: number;
@@ -14,8 +16,10 @@ const GameScore: React.FC<PropsGameScore> = (props) => {
 
   const { color, iconBlack, iconWhite, countBlack, countWhite } = props;
 
+  const { nameBlack, nameWhite } = props;
+
   const styleBackLayer = Object.freeze({
-    background: color,
+    backgroundColor: color,
   });
 
   const styleBlack = Object.freeze({
@@ -28,13 +32,23 @@ const GameScore: React.FC<PropsGameScore> = (props) => {
 
   return (
     <div className="GameScore">
-      <div className="GameScore-score" style={ styleBackLayer }>
-        <div className="GameScore-score-icon" style={ styleBlack }></div>
-        <div className="GameScore-score-count">{ countBlack }</div>
+      <div className="GameScore-score">
+        <div className="GameScore-score-piece" style={ styleBackLayer }>
+          <div className="GameScore-score-icon" style={ styleBlack }></div>
+        </div>
+        <div className="GameScore-score-count">
+          <span>{ nameBlack }:</span>
+          <span>{ countBlack }</span>
+        </div>
       </div>
-      <div className="GameScore-score" style={ styleBackLayer }>
-        <div className="GameScore-score-icon" style={ styleWhite } ></div>
-        <div className="GameScore-score-count">{ countWhite }</div>
+      <div className="GameScore-score">
+        <div className="GameScore-score-piece" style={ styleBackLayer }>
+          <div className="GameScore-score-icon" style={ styleWhite }></div>
+        </div>
+        <div className="GameScore-score-count">
+          <span>{ nameWhite }:</span>
+          <span>{ countWhite }</span>
+        </div>
       </div>
     </div>
   );
