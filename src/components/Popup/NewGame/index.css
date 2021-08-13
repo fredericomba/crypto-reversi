@@ -1,3 +1,10 @@
+.PopupNewGame {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .PopupNewGame-row-title {
   color: white;
   font-size: 1.7rem;

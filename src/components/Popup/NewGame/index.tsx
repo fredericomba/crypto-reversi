@@ -65,7 +65,7 @@ const PopupNewGame : React.FC<PropsPopupNewGame> = (props) => {
           <input ref={ radioWhite } { ...propsRadioWhite } /> <span>{ nameWhite }</span>
         </div>
       </div>
-      <button className="PoppNewGame-button" { ...propsButton }>START GAME</button>
+      <button className="PopupNewGame-button" { ...propsButton }>START GAME</button>
     </div>
   );
 
