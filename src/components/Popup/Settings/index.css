@@ -102,4 +102,5 @@ input[type="text"] {
   background: #1E1E1E;
   color: white;
   padding: 8px;
+  text-transform: uppercase;
 }
