@@ -9,3 +9,8 @@ This is an implementation of the game of ["Reversi"](https://en.wikipedia.org/wi
 ## LIVE VERSION
 
 [https://crypto-reversi.herokuapp.com/](https://crypto-reversi.herokuapp.com/)
+
+
+## VIDEO DEMONSTRATION
+
+[https://youtu.be/QArwQ6dcdy0](https://youtu.be/QArwQ6dcdy0)
